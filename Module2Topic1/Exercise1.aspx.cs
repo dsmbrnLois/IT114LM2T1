@@ -13,5 +13,10 @@ namespace Module1Exercise1
         {
 
         }
+
+        protected void playBtn_Click(object sender, EventArgs e)
+        {
+            nowPlaying.InnerText = "Huwag na Huwag mong Sasabihin by Kitchie Nadal is now Playing";
+        }
     }
 }

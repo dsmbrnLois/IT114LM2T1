@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Module2Topic1.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Module2 Topic1</title>
+    <style>
+    .navbar {
+      background-color: #f0f0f0;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .navbar a {
+      color: black;
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 5px;
+      margin-right: 10px; 
+    }
+
+    .navbar a:hover {
+      background-color: #ddd;
+      cursor: pointer;
+    }
+
+    .navbar a.active {
+      border-bottom: 2px solid #007bff;
+    }
+    footer#footer {
+    background-color: #333; 
+    color: #fff; 
+    padding: 15px; 
+    text-align: center; 
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+  }
+  </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="navbar">
+            <a href="Exercise1.aspx">Exercise 1</a>
+            <a href="Exercise2.aspx">Exercise 2</a>
+            <a href="Exercise3.aspx">Exercise 3</a>
+            <a href="Exercise4.aspx">Exercise 4</a>
+            <a href="Exercise5.aspx">Exercise 5</a>
+        </div>
+        
+        <div>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <footer id="footer">
+            Copyright 2024 @Lois Jeffrey A. Desembrana
+        </footer>
+    </form>
+</body>
+</html>
+
